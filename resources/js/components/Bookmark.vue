@@ -37,14 +37,6 @@
         <span class="item-count">
           <strong>{{ activeItem }}</strong> inactive items
         </span>
-<!--        <ul class="filters">-->
-<!--          <li><a href="javascript:void(0)" :class="{ selected: visibility == 'all' }" @click="filterNow('all')">All</a></li>-->
-<!--          <li><a href="javascript:void(0)" :class="{ selected: visibility == 'active' }" @click="filterNow('active')">Active</a></li>-->
-<!--          <li><a href="javascript:void(0)" :class="{ selected: visibility == 'completed' }" @click="filterNow('completed')">Completed</a></li>-->
-<!--        </ul>-->
-<!--        <button class="clear-completed" v-if="hasCompleted" @click="deleteItem('')">-->
-<!--          Clear completed-->
-<!--        </button>-->
       </footer>
     </section>
     <p>Double click to edit item</p>
@@ -224,6 +216,3 @@ directives: {
 
 }
 </script>
-
-<!--<style lang="css" scoped >-->
-<!--</style>-->
