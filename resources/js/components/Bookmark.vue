@@ -35,7 +35,7 @@
       </section>
       <footer class="footer" v-if="hasItem">
         <span class="item-count">
-          <strong>{{ activeItem }}</strong> active items
+          <strong>{{ activeItem }}</strong> inactive items
         </span>
 <!--        <ul class="filters">-->
 <!--          <li><a href="javascript:void(0)" :class="{ selected: visibility == 'all' }" @click="filterNow('all')">All</a></li>-->
