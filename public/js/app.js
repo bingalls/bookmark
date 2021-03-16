@@ -1896,13 +1896,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 var token = document.head.querySelector('meta[name="csrf-token"]');
 (axios__WEBPACK_IMPORTED_MODULE_0___default().defaults.headers.common["X-Requested-With"]) = 'XMLHttpRequest';
@@ -2438,6 +2431,7 @@ var render = function() {
             ],
             staticClass: "new-item",
             attrs: {
+              type: "url",
               autofocus: "",
               autocomplete: "off",
               placeholder: "Add a URL to bookmark"
@@ -2555,6 +2549,7 @@ var render = function() {
                     _c(
                       "label",
                       {
+                        attrs: { for: "edit" },
                         on: {
                           dblclick: function($event) {
                             return _vm.editItem(item)
@@ -2590,7 +2585,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "edit",
-                    attrs: { type: "text" },
+                    attrs: { type: "url", id: "edit" },
                     domProps: { value: _vm.name },
                     on: {
                       blur: function($event) {
@@ -2645,7 +2640,7 @@ var render = function() {
         ? _c("footer", { staticClass: "footer" }, [
             _c("span", { staticClass: "item-count" }, [
               _c("strong", [_vm._v(_vm._s(_vm.activeItem))]),
-              _vm._v(" active items\n        ")
+              _vm._v(" inactive items\n    ")
             ])
           ])
         : _vm._e()
